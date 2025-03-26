@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #131720;
+    color: white;
 }
 
 h3 {
@@ -47,9 +48,8 @@ form {
 }
 
 input {
-    all: unset;
     font: 15px system-ui;
-    color: #f2f2f2;
+    color: black;
     height: 100%;
     width: 100%;
     padding: 6px 9px;

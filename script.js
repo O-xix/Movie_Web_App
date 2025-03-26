@@ -15,6 +15,9 @@ function returnMovies(url) {
         .then(res => res.json())
         .then(function(data) {
             console.log(data.results)
+
+            
+
             data.results.forEach(element => {
 
                 // Create elements
@@ -37,7 +40,7 @@ function returnMovies(url) {
 
                 const center = document.createElement('center');
 
-                title.innerHTML = `${element.title}`;
+                title.innerHTML = `${element.title}<br><a href="movie.html?id=${element.id}&title=${element.title}">reviews</a>`;
                 image.src = IMG_PATH + element.poster_path;
                 
                 // Add elements inside parent elements
